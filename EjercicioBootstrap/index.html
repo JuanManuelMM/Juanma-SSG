@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol
+          id="exclamation-triangle-fill"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </symbol>
+      </svg>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <svg
+          class="bi flex-shrink-0 me-2"
+          width="24"
+          height="24"
+          role="img"
+          aria-label="Warning:"
+        >
+          <use xlink:href="#exclamation-triangle-fill" />
+        </svg>
+        <strong>Hola usuario!</strong> Para acceder pulsa el siguiente
+        <a href="#" class="alert-link">enlace</a>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="row ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <img
+              src="img/picsar.jpg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Cestas
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                   
+                  </a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Notificaciones
+                    <span class="badge bg-secondary">4</span> </a
+                  >
+                                 
+                </li>
+                
+                  
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary me-2" type="submit">
+                  Buscar
+                </button>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Caiste en la trampa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        No toques fuera, no va a funcionar.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hacerme transferencia de 1000 euros :)</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row mt-4 mb-4">
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col d-flex flex-row-reverse">
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            Toggle right offcanvas
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">...</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="row">
+          <div class="col-6 col-xl-3">
+            <div class="card">
+            <img src="img/findingWater.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Finding water</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-6  col-xl-3">
+            <div class="card">
+              <img src="img/caust.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Caust</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6  col-xl-3">
+            <div class="card">
+              <img src="img/North.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">North</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6  col-xl-3">
+            <div class="card">
+              <img src="img/twins.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Twins</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row mt-4" >
+        <div class="col-12 col-md-6 col-xl-3">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/caust.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Caust</h5>
+                  <p>It is what it is</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/findingWater.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Finding water</h5>
+                  <p>No pienses mal,les cortaron el agua por obras en su calle.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/North.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>North</h5>
+                  <p>No puedo describir esta imagen por restricciones políticas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/twins.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Twins</h5>
+                  <p>El último vídeo de Mr.Beast</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <form >
+            <label for="emailInput" class="form-label">
+              Email
+          </label>
+          <div class="input-group mb-3">
+            
+            
+            <input
+              id="emailInput"
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              aria-label="Email"
+              aria-describedby="basic-addon2"
+            />
+          
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+        
+          
+          <label for="select" class="form-label mt-3"
+            >Elige tu pelicula</label
+          >
+
+          <select class="form-select" id="select" aria-label="Default select example">
+            <option selected>Abrir el selector</option>
+            <option value="1">Caust</option>
+            <option value="2">Twins</option>
+            <option value="3">North</option>
+            <option value="4">Finding Water</option>
+          </select>
+          <label for="exampleDataList" class="form-label mt-3"
+            >Datalist example</label
+          >
+          <input
+            class="form-control"
+            list="datalistOptions"
+            id="exampleDataList"
+            placeholder="Type to search..."
+          />
+          <datalist id="datalistOptions">
+            <option value="San Francisco"></option>
+            <option value="New York"></option>
+            <option value="Seattle"></option>
+            <option value="Los Angeles"></option>
+            <option value="Chicago"></option>
+          </datalist>
+
+          <div class="mb4 d-flex flex-row me-4 mt-3">
+          <div class="form-check  me-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label mt-3" for="flexRadioDefault2">
+              Default checked radio
+            </label>
+          </div>
+        </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Default switch checkbox input</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label mt-4" for="flexSwitchCheckChecked"
+              >Checked switch checkbox input</label
+            >
+          </div>
+          <label class="form-check-label" for="floatingTextarea"
+              >Observaciones</label
+            >
+          <div class="form-floating">
+            
+            <textarea
+              class="form-control mt-3"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+        </form>
+        </div>
+        <div class="col">
+          <div class="row">
+            
+            <div class="col-6 offset-xl-3  col-xl-3 col-sm-3 d-none d-md-block">
+              <img src="img/twins.webp" class="rounded-circle" style="height: 10em; width: 10em;" alt="">
+            </div>
+            <div class="col-6 col-sm-3  col-xl-3">
+              <img src="img/twins.webp"  style="height: 10em; width: 10em; " class="rounded-circle"alt="">
+            </div>
+            <div class="d-none d-xl-block w-100"></div>
+            <div class="col-6 col-sm-3 col-xl-3 d-none d-md-block">
+              <img src="img/findingWater.jpeg"style="height: 10em; width: 10em;" class="rounded-circle"alt="">
+            </div>
+            <div class="col-6 offset-xl-6 col-sm-3  col-xl-3">
+              <img src="img/findingWater.jpeg" style="height: 10em; width: 10em;" class="rounded-circle" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-3 col-xl-3 d-none d-md-block ">
+              <img src="img/caust.webp"style="height: 10em; width: 10em;"  class="rounded-circle"alt="">
+            </div>
+            <div class="col-6 col-sm-3  col-xl-3 ">
+              <img src="img/caust.webp"style="height: 10em; width: 10em;" class="rounded-circle" alt="">
+            </div>
+            <div class="col-6 col-sm-3  col-xl-3 d-none d-md-block ">
+              <img src="img/North.webp" style="height: 10em; width: 10em;" class="rounded-circle" alt="">
+            </div>
+            <div class="col-6 col-sm-3  col-xl-3 ">
+              <img src="img/North.webp"style="height: 10em; width: 10em;" class="rounded-circle" alt="">
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="row bg-secondary divFooter">
+        <div class="col text-start texto1" style="font-weight: bold;">Examen Bootstrap</div>
+        <div class="col text-center texto2" style="text-decoration: underline;">Juan Manuel</div>
+        <div class="col text-end texto3" style="font-style: italic;">2ºDAM</div>
+      </div> 
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

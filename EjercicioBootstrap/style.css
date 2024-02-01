@@ -1,0 +1,13 @@
+@media (min-width: 576px) {
+    .divFooter{
+        justify-content: space-evenly;
+    }
+  }
+
+  @media (min-width: 768px) {
+   
+    .divFooter{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+  }
